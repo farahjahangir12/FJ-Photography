@@ -6,7 +6,13 @@
     <title>Photography Landing Page</title>
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel="stylesheet">
-   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <body class="bg-light font-poppins">
@@ -37,7 +43,9 @@
         </section>
     </main>
     <h2 class="text-xl text-bold m-2 p-8 text-center text-dark">What makes FJ Photography different?</h2>
-    <section id="about" class="flex flex-wrap basis-1 flex-col justify-around items-center bg-dark md:flex-row p-4 space-x-8">
+    
+    <section id="about">
+        <div class="flex flex-wrap flex-col justify-around items-center bg-dark md:flex-row p-4 space-x-8">
         <div class="w-[300px] h-auto relative overflow-hidden rounded-lg ml-3">
             <div x-data="{ slide: 0, autoplay: true }"
                 x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)"class="w-full">
@@ -77,9 +85,11 @@
                 <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, modi nostrum?</p>
             </div>
         </div>
+    </div>
     </section>
     
-    <section id="feedback" class="bg-tan flex flex-col flex-wrap items-center justify-center  pt-16 p-6 md:flex-row md:space-x-6 ">
+    <section id="feedback">
+        <div class="bg-tan flex flex-col flex-wrap items-center justify-center  pt-16 p-6 md:flex-row md:space-x-6 ">
         <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
             <img src="images/avatar-ali.png" alt="Ali" class="w-16">
             <h5 class="text-lg text-tan font-bold">Ali Bravo</h5>
@@ -95,10 +105,12 @@
             <h5 class="text-lg text-tan font-bold">Adil James</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
         </div>
+        </div>
     </section>
 
  
-   <section class="bg-dark flex flex-col justify-around items-center p-3 md:flex-row md:space-x-6">
+   <section>
+    <div class="bg-dark flex flex-col justify-around items-center p-3 md:flex-row md:space-x-6">
     <div id="booknow" class="flex bg-dark p-8 pt-16">
         <form>
             <div class="mb-4">
@@ -138,6 +150,7 @@
     <div class="flex text-sm text-light justify-center space-x-6">
         &copy; 2024 FJ Photoraphy. All rights reserved.
     </div>
+</div>
 </div>
    </section>
 
