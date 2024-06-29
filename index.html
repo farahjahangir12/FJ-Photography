@@ -20,8 +20,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <body class="bg-light">
     <main class="flex md:flex-row flex-col-reverse">
-        <section class="flex flex-col basis-full md:basis-1/2 bg-light p-14 pt-18">
-            <div class="p-3 pt-2 text-dark container mt-4 ml-3">
+        <section class="flex flex-col justify-center items-center md:items-start md:w-1/2 bg-light p-14 pt-18">
+            <div class="p-3 pt-2 text-dark container">
                 <h2 class="text-2xl mb-1 font-bold text-center md:text-left">Preserve memories with</h2>
                 <h1 class="text-5xl mb-4 font-bold text-center md:text-left">FJ photography</h1>
                 <p class="text-sm text-center md:text-left">Whether it's a wedding, portrait, or commercial shoot, FJ Photography brings creativity, expertise, and a personalized touch to every frame. Book a session
@@ -31,7 +31,7 @@
                 <a href="#booknow" class="p-3 px-6 pt-2 text-dark font-extrabold bg-tan rounded-full hover:text-white">Book Now</a>
             </div>
         </section>
-        <section class="flex flex-col justify-center items-center basis-full md:basis-1/2 bg-dark p-8 h-screen">
+        <section class="flex flex-col justify-center items-center md:w-1/2 bg-dark p-8 h-screen">
             <nav class="container">
                 <div class="flex justify-center items-center text-tan space-x-6 p-4">
                     <a href="#about" class="hover:text-light">About</a>
@@ -129,32 +129,29 @@
                         <label for="date" class="block text-light font-bold mb-1">Date</label>
                         <input type="date" id="date" name="date" class="shadow border rounded w-full py-2 px-3 text-light">
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-center md:justify-start">
                         <button class="p-3 px-6 pt-2 text-dark font-extrabold bg-tan rounded-full hover:text-white">Confirm</button>
                     </div>
                 </form>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="w-full bg-dark p-8">
-        <div class="flex flex-col justify-center items-center space-y-4">
-            <div class="flex justify-center items-center space-x-4">
-                <a href="#">
-                    <img src="images/icon-facebook.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
-                </a>
-                <a href="#">
-                    <img src="images/icon-instagram.svg" alt="Instagram" class="w-6 h-6 md:w-12 md:h-12">
-                </a>
-                <a href="#">
-                    <img src="images/icon-twitter.svg" alt="Twitter" class="w-6 h-6 md:w-12 md:h-12">
-                </a>
-                <a href="#">
-                    <img src="images/icon-youtube.svg" alt="YouTube" class="w-6 h-6 md:w-12 md:h-12">
-                </a>
-            </div>
-            <div class="flex text-sm text-light justify-center space-x-6">
-                &copy; 2024 FJ Photography. All rights reserved.
+            <div class="flex flex-col justify-center items-center space-y-4">
+                <div class="flex justify-center items-center space-x-4 p-3 pt-4">
+                    <a href="#">
+                        <img src="images/icon-facebook.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-instagram.svg" alt="Instagram" class="w-6 h-6 md:w-12 md:h-12">
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-twitter.svg" alt="Twitter" class="w-6 h-6 md:w-12 md:h-12">
+                    </a>
+                    <a href="#">
+                        <img src="images/icon-youtube.svg" alt="YouTube" class="w-6 h-6 md:w-12 md:h-12">
+                    </a>
+                </div>
+                <div class="flex text-sm text-light justify-center space-x-6">
+                    &copy; 2024 FJ Photography. All rights reserved.
+                </div>
             </div>
         </div>
     </section>
