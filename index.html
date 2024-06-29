@@ -44,8 +44,8 @@
     </main>
     <h2 class="text-xl text-bold m-2 p-8 text-center text-dark">What makes FJ Photography different?</h2>
     
-    <section id="about" class="container w-full bg-dark">
-        <div class="w-full md:w-1/2 flex flex-wrap flex-col justify-around items-center md:flex-row md:justify-center p-4 md:space-x-8">
+    <section id="about">
+        <div class="flex flex-wrap flex-col justify-around items-center bg-dark md:flex-row p-4 space-x-8">
         <div class="w-[300px] h-auto relative overflow-hidden rounded-lg ml-3">
             <div x-data="{ slide: 0, autoplay: true }"
                 x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)"class="w-full">
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <div  class="w-full md:w-1/2flex flex-col justify-center items-start md:items-center">
+        <div  class="w-1/2 flex flex-col justify-center items-start md:items-center">
             <h1 class="text-3xl md:text-4xl text-tan mb-4 mt-4 font-bold text-center mr-4 p-2">Our Aim Your Satisfaction</h1>
             <div class="flex items-center mb-4">
                 <div class="text-dark bg-tan rounded-full w-8 h-8 flex items-center justify-center mr-4 p-2">01</div>
@@ -89,8 +89,8 @@
     </section>
     
     <section id="feedback">
-        <div class=" flex flex-col pt-16 p-6 md:flex-row md:space-x-6 max-w-6xl ">
-        <div class="  container mx-auto md:mx-0 w-full md:w-1/2 bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
+        <div class="bg-tan flex flex-col flex-wrap items-center justify-center  pt-16 p-6 md:flex-row md:space-x-6 ">
+        <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
             <img src="images/avatar-ali.png" alt="Ali" class="w-16">
             <h5 class="text-lg text-tan font-bold">Ali Bravo</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
@@ -100,7 +100,7 @@
             <h5 class="text-lg text-tan font-bold">Anisha Pandya</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
         </div>
-        <div class="container mx-auto md:mx-0 bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
+        <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
             <img src="images/avatar-shanai.png" alt="Adil" class="w-16">
             <h5 class="text-lg text-tan font-bold">Adil James</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
@@ -109,9 +109,9 @@
     </section>
 
  
-   <section class="w-full bg-dark">
-    <div class=" w-full  flex flex-col justify-around items-center p-3 md:flex-row md:space-x-6">
-    <div id="booknow" class=" container mx-auto md:mx-0 flex bg-dark p-8 pt-16">
+   <section>
+    <div class="bg-dark flex flex-col justify-around items-center p-3 md:flex-row md:space-x-6">
+    <div id="booknow" class="flex bg-dark p-8 pt-16">
         <form>
             <div class="mb-4">
                 <h3 class="text-3xl text-white text-bold mb-4 mt-4 text-center mr-4 p-2">Confirm Your Session!</h3>
@@ -131,7 +131,7 @@
             </button>
             </div>
         </form>
-    </div class=" container mx-auto md:mx-0">
+    </div>
     <div id="contact" class="flex flex-col">
     <div class="flex justify-center items-center space-x-4 p-3 pt-4">
     <a href="">
