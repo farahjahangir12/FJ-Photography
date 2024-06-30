@@ -25,24 +25,24 @@
                 <a href="#booknow" class="p-2 px-4 pt-1 text-dark text-extrabold bg-tan rounded-full baseline hover:text-white">Book Now</a>
             </div>
         </section>
-        <section class="flex flex-col justify-center items-center basis-1/2 grow shrink bg-dark p-6 flex-[40%]">
-            <nav class="container">
+        section class="flex flex-col justify-center items-center basis-1/2 grow shrink bg-dark p-4 flex-[40%]">
+            <nav class="container relative">
                 <div class="flex justify-center items-center text-tan space-x-4 p-2">
-                    <a href="#about" class="hover:text-light text-sm">About</a>
-                    <a href="#booknow" class="hover:text-light text-sm">Bookings</a>
-                    <a href="#contact" class="hover:text-light text-sm">Contacts</a>
-                    <a href="#feedback" class="hover:text-light text-sm">Feedback</a>
+                    <a href="#about" class="hover:text-light">About</a>
+                    <a href="#booknow" class="hover:text-light">Bookings</a>
+                    <a href="#contact" class="hover:text-light">Contacts</a>
+                    <a href="#feedback" class="hover:text-light">Feedback</a>
                 </div>
             </nav>
             <div>
-                <img src="images/pexels-skylake-19355781.jpg" alt="Girl Holding Camera" class="h-[70vh] rounded-lg mx-auto my-0">
+                <img src="images/pexels-skylake-19355781.jpg" alt="Girl Holding Camera" class="max-w-full h-[80vh] rounded-lg">
             </div>
         </section>
     </main>
     <h2 class="text-xl font-bold m-4 p-8 text-center text-dark md:p-12 md:text-2xl">What makes FJ Photography different?</h2>
     <section>
     <section id="about" class="bg-dark p-4 mt-4">
-        <div class="flex flex-col justify-center items-center bg-dark md:flex-row p-4 space-x-8 md:justify-around">
+        <div class="flex flex-wrap flex-col justify-around items-center md:flex-row md:space-x-4">
             <div class="w-[300px] h-auto relative overflow-hidden rounded-lg mx-auto mb-4 md:mb-0">
                 <div x-data="{ slide: 0, autoplay: true }" x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)" class="w-full">
                     <div class="flex transition-transform duration-500 ease-in-out" :style="'transform: translateX(-' + slide * 100 + '%)'">
