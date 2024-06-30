@@ -36,7 +36,7 @@
     </main>
     <h2 class="text-xl font-bold m-2 p-2 text-center text-dark">What makes FJ Photography different?</h2>
     
-    <section id="about" class="bg-dark p-4">
+    <section id="about" class="bg-dark p-3 mx-auto">
         <div class="flex flex-wrap flex-col justify-around items-center md:flex-row md:space-x-4">
             <div class="w-[300px] h-auto relative overflow-hidden rounded-lg mx-auto mb-4 md:mb-0">
                 <div x-data="{ slide: 0, autoplay: true }" x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)" class="w-full">
@@ -77,58 +77,67 @@
         </div>
     </section>
     
-    <section id="feedback" class="bg-tan p-4 pt-4 flex flex-col items-center justify-center md:flex-row md:space-x-4">
-        <div class="bg-dark flex flex-col items-center space-y-2 mb-4 p-4 w-[250px] mx-auto md:mx-0">
-            <img src="images/avatar-ali.png" alt="Ali Bravo" class="w-16">
+    <section id="feedback" class="bg-tan p-6 pt-16 flex flex-col items-center justify-center md:flex-row md:space-x-6>
+        <div class="bg-tan flex flex-col flex-wrap items-center justify-center  pt-16 p-6 md:flex-row md:space-x-6 ">
+        <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
+            <img src="images/avatar-ali.png" alt="Ali" class="w-16">
             <h5 class="text-lg text-tan font-bold">Ali Bravo</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
         </div>
-        <div class="bg-dark flex flex-col items-center space-y-2 mb-4 p-4 w-[250px] mx-auto md:mx-0">
-            <img src="images/avatar-anisha.png" alt="Anisha Pandya" class="w-16">
+        <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
+            <img src="images/avatar-anisha.png" alt="Anisha" class="w-16">
             <h5 class="text-lg text-tan font-bold">Anisha Pandya</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
         </div>
-        <div class="bg-dark flex flex-col items-center space-y-2 mb-4 p-4 w-[250px] mx-auto md:mx-0">
-            <img src="images/avatar-shanai.png" alt="Adil James" class="w-16">
+        <div class="bg-dark flex flex-col items-center space-y-4 mb-4 p-6 w-[250px]">
+            <img src="images/avatar-shanai.png" alt="Adil" class="w-16">
             <h5 class="text-lg text-tan font-bold">Adil James</h5>
             <p class="text-sm text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta nesciunt odit numquam? Omnis nulla necessitatibus tenetur sapiente!</p>
         </div>
     </section>
 
-    <section class="bg-dark p-4 pt-4 flex flex-col items-center md:flex-row md:space-x-4">
-        <div id="booknow" class="flex bg-dark p-4">
-            <form class="w-full max-w-lg mx-auto">
-                <div class="mb-2">
-                    <h3 class="text-3xl text-white font-bold mb-2 mt-2 text-center">Confirm Your Session!</h3>
-                    <label for="name" class="block text-light font-bold mb-1">Name</label>
-                    <input type="text" id="name" name="name" class="shadow border rounded w-full py-2 px-3 text-light bg-dark" placeholder="Your Name">
-                </div>
-                <div class="mb-2">
-                    <label for="email" class="block text-light font-bold mb-1">Email</label>
-                    <input type="email" id="email" name="email" class="shadow border rounded w-full py-2 px-3 text-light bg-dark" placeholder="Your Email">
-                </div>
-                <div class="mb-2">
-                    <label for="date" class="block text-light font-bold mb-1">Date</label>
-                    <input type="date" id="date" name="date" class="shadow border rounded w-full py-2 px-3 text-light bg-dark">
-                </div>
-                <div class="mb-2">
-                    <label for="message" class="block text-light font-bold mb-1">Message</label>
-                    <textarea id="message" name="message" class="shadow border rounded w-full py-2 px-3 text-light bg-dark" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <div class="flex justify-center">
-                    <button type="submit" class="bg-tan text-dark font-bold py-2 px-4 rounded-full hover:text-white">Submit</button>
-                </div>
-            </form>
-        </div>
-        <div id="contact" class="flex flex-col items-center">
-            <div class="flex justify-center items-center space-x-2 p-2 pt-4">
-                <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" class="w-6 h-6 md:w-8 md:h-8"></a>
-                <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8"></a>
-                <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" class="w-6 h-6 md:w-8 md:h-8"></a>
-                <a href="#"><img src="images/icon-youtube.svg" alt="YouTube" class="w-6 h-6 md:w-8 md:h-8"></a>
+ 
+   <section class="bg-dark flex flex-col justify-around items-center p-3 md:flex-row md:space-x-6">
+    <div id="booknow" class="flex bg-dark p-8 pt-16">
+        <form>
+            <div class="mb-4">
+                <h3 class="text-3xl text-white text-bold mb-4 mt-4 text-center mr-4 p-2">Confirm Your Session!</h3>
+                <label for="name" class="block text-light font-bold mb-1">Name</label>
+                <input type="text" id="name" name="name" class="shadow  border rounded w-full py-2 px-3 text-light" placeholder="Your Name">
             </div>
-            <div class="text-sm text-light text-center mt-2">&copy; 2024 FJ Photography. All rights reserved.</div>
-        </div>
-    </section>
+            <div class="mb-4">
+                <label for="email" class="block text-light font-bold mb-1">Email</label>
+                <input type="email" id="email" name="email" class="shadow border rounded w-full py-2 px-3 text-light" placeholder="Your Email">
+            </div>
+            <div class="mb-4">
+                <label for="date" class="block text-light font-bold mb-1">Date</label>
+                <input type="date" id="date" name="date" class="shadow border rounded w-full py-2 px-3 text-light">
+            </div>
+            <div class="flex items-center justify-between">
+                <button class="p-3 px-6 pt-2 text-dark text-extrabold bg-tan rounded-full baseline hover:text-white">Confirm</a>
+            </button>
+            </div>
+        </form>
+    </div>
+    <div id="contact" class="flex flex-col">
+    <div class="flex justify-center items-center space-x-4 p-3 pt-4">
+    <a href="">
+        <img src="images\icon-facebook.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
+    </a>
+    <a href="">
+        <img src="images\icon-instagram.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
+    </a>
+    <a href="">
+        <img src="images\icon-twitter.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
+    </a>
+    <a href="">
+        <img src="images\icon-youtube.svg" alt="Facebook" class="w-6 h-6 md:w-12 md:h-12">
+    </a>
+    </div>
+    <div class="flex text-sm text-light justify-center space-x-6">
+        &copy; 2024 FJ Photoraphy. All rights reserved.
+    </div>
+</div>
+   </section>
 </body>
 </html>
