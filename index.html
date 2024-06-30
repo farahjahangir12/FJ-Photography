@@ -35,13 +35,13 @@
                 </div>
             </nav>
             <div>
-                <img src="images/pexels-skylake-19355781.jpg" alt="Girl Holding Camera" class="md:max-w-full h-[80vh] rounded-lg">
+                <img src="images/pexels-skylake-19355781.jpg" alt="Girl Holding Camera" class="max-w-full h-2/3 rounded-lg">
             </div>
         </section>
     </main>
     <h2 class="text-xl font-bold m-4 p-8 text-center text-dark md:p-12 md:text-2xl">What makes FJ Photography different?</h2>
-    ction id="about" class="bg-dark p-3 mx-auto">
-        <div class="flex flex-wrap flex-col justify-around items-center md:flex-row md:space-x-4">
+    <section id="about" class="bg-dark p-3 mx-auto">
+        <div class="flex flex-wrap flex-col justify-center items-center space-x-4 md:flex-row md:space-x-4">
             <div class="w-[300px] h-auto relative overflow-hidden rounded-lg mx-auto mb-4 md:mb-0">
                 <div x-data="{ slide: 0, autoplay: true }" x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)" class="w-full">
                     <div class="flex transition-transform duration-500 ease-in-out" :style="'transform: translateX(-' + slide * 100 + '%)'">
