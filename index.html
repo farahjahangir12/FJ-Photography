@@ -40,9 +40,8 @@
         </section>
     </main>
     <h2 class="text-xl font-bold m-4 p-8 text-center text-dark md:p-12 md:text-2xl">What makes FJ Photography different?</h2>
-    
-    <section id="about" class="bg-dark p-4 mt-4">
-        <div class="flex flex-col items-center justify-center md:flex-row md:space-x-8">
+    ction id="about" class="bg-dark p-3 mx-auto">
+        <div class="flex flex-wrap flex-col justify-around items-center md:flex-row md:space-x-4">
             <div class="w-[300px] h-auto relative overflow-hidden rounded-lg mx-auto mb-4 md:mb-0">
                 <div x-data="{ slide: 0, autoplay: true }" x-init="setInterval(() => { if (autoplay) { slide = (slide + 1) % 5 } }, 3000)" class="w-full">
                     <div class="flex transition-transform duration-500 ease-in-out" :style="'transform: translateX(-' + slide * 100 + '%)'">
@@ -64,25 +63,19 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/2 flex flex-col items-start text-light mx-auto mr-4 md:mx-0 p-4 space-x-6">
-                <h1 class="text-2xl md:text-4xl text-tan mb-4 mt-2 font-bold text-center p-2">Our Aim Your Satisfaction</h1>
+            <div class="flex flex-col justify-center items-start md:items-center text-light mx-auto md:mx-0">
+                <h1 class="text-3xl md:text-4xl text-tan mb-4 mt-2 font-bold text-center p-2">Our Aim Your Satisfaction</h1>
                 <div class="flex items-center mb-4">
-                    <div class="text-dark bg-tan rounded-full w-8 p-2 h-8 flex items-center justify-center mr-4 p-1 md:p-4">01</div>
-                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nihil enim quasi tempora sequi ad voluptates libero totam, alias quidem aut
-                        harum modi quod beatae qui sapiente. Veniam accusantium ad laudantium.</p>
+                    <div class="text-dark bg-tan rounded-full w-8 h-8 flex items-center justify-center mr-4 p-1">01</div>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, modi nostrum?</p>
                 </div>
                 <div class="flex items-center mb-4">
-                    <div class="text-dark bg-tan rounded-full w-8 p-2 h-8 flex items-center justify-center mr-4 p-1 md:p-4">02</div>
-                   <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nihil enim quasi tempora sequi ad voluptates libero totam, alias quidem aut
-                        harum modi quod beatae qui sapiente. Veniam accusantium ad laudantium.</p>
+                    <div class="text-dark bg-tan rounded-full w-8 h-8 flex items-center justify-center mr-4 p-1">02</div>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, modi nostrum.</p>
                 </div>
                 <div class="flex items-center">
-                    <div class="text-dark bg-tan rounded-full w-8 p-2 h-8 flex items-center justify-center mr-4 p-1 md:p-4">03</div>
-                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nihil enim quasi tempora sequi ad voluptates libero totam, alias quidem aut
-                        harum modi quod beatae qui sapiente. Veniam accusantium ad laudantium.</p>
+                    <div class="text-dark bg-tan rounded-full w-8 h-8 flex items-center justify-center mr-4 p-1">03</div>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, modi nostrum?</p>
                 </div>
             </div>
         </div>
